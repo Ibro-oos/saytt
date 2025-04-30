@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Способы оплаты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color:#D09154;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #0073e6;
+        }
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .method {
+            width: 250px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .method a{
+            text-decoration: none;
+        }
+        .method:hover {
+            transform: scale(1.05);
+        }
+        .method img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 50px;
+        }
+        .method h3 {
+            color: #0073e6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #D09154;
+            color: white;
+            margin-top: 30px;
+        }
+        .back-link {
+            position: fixed;   
+            bottom: 20px;      
+            left: 20px;       
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .back-link:hover{
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Способы оплаты</h1>
+</header>
+
+<div class="container">
+    <h2>Выберите удобный способ оплаты</h2>
+    <p>Мы предоставляем несколько удобных и безопасных способов оплаты, чтобы вы могли выбрать тот, который вам подходит. Все транзакции на нашем сайте защищены и проводятся через надежные платежные системы.</p>
+    
+    <div class="payment-methods">
+        <div class="method">
+            <a href="Спасибо_за_покупку_виз.html"> <img src="images\Visa.jfif" alt="Банковские карты">
+            <h3>Банковские карты</h3>
+            <p>Visa</p>
+        </div>
+        <div class="method">
+            <a href="Спасибо_за_покупку.html"> <img src="images\Что такое кредиты наличными, простыми словами_.jfif" alt="Наличные">
+            <h3>Наличные (при самовывозе)</h3>
+            <p>Оплата наличными при получении товара</p>
+            </a>
+        </div>
+    </div>
+</div>
+<a href="javascript:history.back();" class="back-link">← Назад</a>
+<footer>
+    <p>Если у вас возникли вопросы по оплате, пожалуйста, свяжитесь с нашей службой поддержки.</p>
+</footer>
+
+</body>
+</html>

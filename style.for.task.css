@@ -1,0 +1,277 @@
+* {
+    font-family: 'Lobster', sans-serif;
+}
+body {
+    font-family: 'Lobster', sans-serif;
+    background-color: #f5f0db;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F5F5DC;
+    padding: 10px 20px;
+    font-family: 'Lobster', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 130px;
+    height: 95px;
+    margin-right: 10px;
+    z-index: -1;
+}
+.contacts {
+	background: #D09154;
+	display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    font-size: 25px;
+    list-style: none;
+
+}
+.re11{
+    position: absolute;
+    top: 16.8%;
+    left: 26%;
+    background-color: #D09154;
+    border-radius: 30px;
+    outline: 1px solid white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+.contacts .re1:hover + .re11{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+.re22{
+    position: absolute;
+    top: 16.8%;
+    left: 49%;
+    background-color: #D09154;
+    border-radius: 30px;
+    outline: 1px solid white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+.contacts .re2:hover + .re22{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+.re33{
+    position: absolute;
+    top: 16.8%;
+    left: 80%;
+    background-color: #D09154;
+    border-radius: 30px;
+    outline: 1px solid white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+.contacts .re3:hover + .re33{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+.re{
+    position: absolute;
+    top: 16.8%;
+    left: 0;
+    background-color: #D09154;
+    border-radius: 30px;
+    outline: 1px solid white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+.contacts .re0:hover + .re{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+}
+.nav {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 28px;
+    margin-top: -80px;
+    gap: 20px;
+
+}
+
+nav ul li {
+	position: relative;
+    margin: 0 15px;
+    left: 25%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: lobster;
+    font-weight: bold;
+    background: #D09154;
+    padding: 12px 60px;
+    border-radius: 60px;
+    outline: 1px solid white;
+
+}
+
+.contacts a {
+	font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px ;
+    z-index: 10;
+}
+
+nav .a{
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+    top: 120px;
+    left: -100%;
+    font-size: 13px;
+
+
+} 
+nav ul > li:hover .a{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+    z-index: 11;
+}
+nav .k{
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+    top: 120px;
+    left: -55%;
+    font-size: 13px;
+} 
+nav ul > li:hover .k{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+    z-index: 11;
+}
+nav .g{
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+    top: 120px;
+    left: -60%;
+    font-size: 13px;
+} 
+nav ul > li:hover .g{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+    z-index: 11;
+}
+nav .ko{
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+    top: 120px;
+    left: -100%;
+    font-size: 13px;
+} 
+nav ul > li:hover .ko{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(10px);
+    z-index: 11;
+}
+
+.hero img {
+    width: 50%;
+    height: auto;
+    left: -5;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 20px;
+
+}
+
+.category {
+    background: 0;
+    padding: 15px;
+    border-radius: 100px;
+    width: 70%;
+    height: 55%;
+    margin-left: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform .3s;
+}
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    width: 100%;
+    height: 80%;
+    border-radius: 100px;
+}
+
+.category a {
+    position: relative;
+    top: 0%;
+    left: 25%;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+category:hover p {
+    opacity: 1;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D49A6A;
+    color: white;
+    margin-top: 20px;
+}
+.category img{
+    z-index: 100;
+}
+.line{
+	position: absolute;
+	top: 83%;
+	background: #000;
+	width: 98%;
+	height: 1px;
+	z-index: 1;
+}

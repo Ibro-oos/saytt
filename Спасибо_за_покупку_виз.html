@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата прошла успешно</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #0073e6;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .thank-you {
+            font-size: 24px;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #D09154;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform .3s;
+        }
+        .btn:hover {
+            transform: scale(1.3);
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Оплата прошла успешна!</h1>
+    <p class="thank-you">Спасибо за покупку!</p>
+    <p>Ваш заказ был успешно обработан. Мы скоро свяжемся с вами для подтверждения доставки.</p>
+    <a href="index.task.html" class="btn">Главное меню</a>
+    <a href="javascript:history.go(-2);" class="btn">← Назад к товару</a>
+</div>
+
+</body>
+</html>
